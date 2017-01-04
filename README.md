@@ -1,4 +1,4 @@
-# ev3test
+# ev3
 Test code and notes for EV3
 
 ## Getting Started and Help
@@ -19,6 +19,14 @@ python3
 If you have files on the EV3 you can run them as:
 ```bash
 python3 file.py
+```
+
+### Running programs from Brickman
+
+If you have a Python file on the EV3 you can run it from the Brickman menu, however the file must first be set to be executable with the `chmod` command:
+
+```bash
+chmod u+x file.py
 ```
 
 ### Cloning this repository onto EV3
