@@ -1,4 +1,4 @@
-# ev3
+# Help
 Test code and notes for EV3
 
 ## Getting Started and Help
