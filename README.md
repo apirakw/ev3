@@ -21,6 +21,24 @@ If you have files on the EV3 you can run them as:
 python3 file.py
 ```
 
+### Cloning this repository onto EV3
+
+For example, if you want to run the `speak.py` demo:
+
+1. Connect to EV3 from computer with SSH (see above)
+2. Run:
+```bash
+git clone https://github.com/apirakw/ev3.git
+```
+3. Change into the `ev3/demo` directory:
+```bash
+cd ev3/demo
+```
+4. Run the program:
+```bash
+python3 speak.py
+```
+
 ### Links and Resources
 * [Python for ev3dev](https://github.com/rhempel/ev3dev-lang-python)
 * [EV3python tutorial](https://sites.google.com/site/ev3python/)
@@ -28,3 +46,5 @@ python3 file.py
 * Writing using [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Examples
+
+* demo: Simple demonstrations taken [Python ev3dev](https://github.com/rhempel/ev3dev-lang-python) and [EV3python](https://sites.google.com/site/ev3python/)
