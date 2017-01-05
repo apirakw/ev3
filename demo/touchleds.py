@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ev3dev.ev3 import *
+import ev3dev.ev3 as ev3
 
 # Variable 'ts' refers to the touch sensor (make sure it is connected)
 ts = ev3.TouchSensor()
