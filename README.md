@@ -9,6 +9,8 @@ Test code and notes for EV3
 ```bash
 ssh robot@ev3dev.local
 ```
+3. Default password is `maker`
+
 ### Interactive Python
 Once logged in to the EV3 you can run Python as:
 ```bash
