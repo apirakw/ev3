@@ -37,17 +37,22 @@ chmod u+x file.py
 For example, if you want to run the `speak.py` demo:
 
 1. Connect to EV3 from computer with SSH (see above)
-2. Run:
+2. Change into the `ev3` directory:
 
   ```bash
-  git clone https://github.com/apirakw/ev3.git
+  cd ev3
   ```
-3. Change into the `ev3/demo` directory:
+3. Pull the code from Github:
 
   ```bash
-  cd ev3/demo
+  git pull
   ```
-4. Run the program:
+4. Change into the `demo` directory:
+
+  ```bash
+  cd demo
+  ```
+5. Run the program:
 
   ```bash
   python3 speak.py
