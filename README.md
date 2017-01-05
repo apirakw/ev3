@@ -39,7 +39,7 @@ For example, if you want to run the `speak.py` demo:
 1. Connect to EV3 from computer with SSH (see above)
 2. Run:
 
-```bash
+  ```bash
   git clone https://github.com/apirakw/ev3.git
   ```
 3. Change into the `ev3/demo` directory:
