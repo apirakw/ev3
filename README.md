@@ -38,17 +38,20 @@ For example, if you want to run the `speak.py` demo:
 
 1. Connect to EV3 from computer with SSH (see above)
 2. Run:
+
 ```bash
-git clone https://github.com/apirakw/ev3.git
-```
+  git clone https://github.com/apirakw/ev3.git
+  ```
 3. Change into the `ev3/demo` directory:
-```bash
-cd ev3/demo
-```
+
+  ```bash
+  cd ev3/demo
+  ```
 4. Run the program:
-```bash
-python3 speak.py
-```
+
+  ```bash
+  python3 speak.py
+  ```
 
 ### Links and Resources
 * [Python for ev3dev](https://github.com/rhempel/ev3dev-lang-python)
