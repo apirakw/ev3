@@ -6,9 +6,10 @@ Test code and notes for EV3
 ### Connect to EV3 from computer
 1. Open Terminal
 2. Type:
-```bash
-ssh robot@ev3dev.local
-```
+
+  ```bash
+  ssh robot@ev3dev.local
+  ```
 3. Default password is `maker`
 
 ### Interactive Python
