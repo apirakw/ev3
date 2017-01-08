@@ -73,7 +73,9 @@ class TRACK3RWithHammer(TRACK3R):
 
     def hammer(self, state):
         if state:
-            self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
-            self.medium_motor.run_timed(time_sp=1000,speed_sp=-50)
+            #self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
+            #self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
+            self.medium_motor.run_forever(speed_sp=50)
         else:
-            self.medium_motor.stop()
+            self.medium_motor.run_forever(speed_sp=-50)
+            #self.medium_motor.stop()
