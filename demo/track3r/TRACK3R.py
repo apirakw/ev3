@@ -64,3 +64,16 @@ class TRACK3RWithClaw(TRACK3R):
             self.medium_motor.run_to_rel_pos(speed_sp=200, position_sp=-75)
         else:
             self.medium_motor.run_to_rel_pos(speed_sp=200, position_sp=75)
+
+class TRACK3RWithHammer(TRACK3R):
+               
+    def __init__(self, medium_motor=OUTPUT_A, left_motor=OUTPUT_B, right_motor=OUTPUT_C):
+        TRACK3R.__init__(self, medium_motor, left_motor, right_motor)
+        self.remote.on_beacon = self.hammer
+
+    def hammer(self, state):
+        if state:
+            self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
+            self.medium_motor.run_timed(time_sp=1000,speed_sp=-50)
+        else:
+            self.medium_motor.stop()
