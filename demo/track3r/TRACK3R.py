@@ -75,7 +75,7 @@ class TRACK3RWithHammer(TRACK3R):
         if state:
             #self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
             #self.medium_motor.run_timed(time_sp=1000,speed_sp=50)
-            self.medium_motor.run_to_rel_pos(speed_sp=50, position_sp=180)
+            self.medium_motor.run_to_rel_pos(speed_sp=500, position_sp=180)
         else:
-            self.medium_motor.run_to_rel_pos(speed_sp=50, position_sp=-180)
+            self.medium_motor.run_to_rel_pos(speed_sp=500, position_sp=-180)
             #self.medium_motor.stop()
