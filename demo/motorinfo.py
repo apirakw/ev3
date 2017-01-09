@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(levelname)5s: %(message)s')
 log = logging.getLogger(__name__)
 
-def logMotor(motor):
+def logMotor(motor, log):
   log.info("===================")
   log.info("Current motor state")
   log.info(motor.address())
@@ -33,11 +33,11 @@ def logMotor(motor):
 log.info("Starting Motor Demo")
 btn = ev3.Button() # initialise button
 m = ev3.LargeMotor('outA') # initialise motor
-logMotor(m)
+logMotor(m, log)
 
 log.info("Resetting the motor")
 m.reset()
-logMotor(m)
+logMotor(m, log)
 
 motor_speed=100
 motor_runtime=3000
@@ -45,4 +45,4 @@ log.info("Running for " + str(motor_runtime) + "ms and speed " + str(motor_speed
 m.speed_sp(motor_speed)
 m.time_sp(motor_runtime)
 m.run_timed()
-logMotor(m)
+logMotor(m, log)
