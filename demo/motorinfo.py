@@ -32,7 +32,7 @@ def logMotor(motor):
 
 log.info("Starting Motor Demo")
 btn = ev3.Button() # initialise button
-m = ev3.LargeMotor(OUTPUT_A) # initialise motor
+m = ev3.LargeMotor('outA') # initialise motor
 logMotor(m)
 
 log.info("Resetting the motor")
