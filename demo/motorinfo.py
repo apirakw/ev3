@@ -26,7 +26,7 @@ def logMotor(motor):
   log.info(motor.speed())
   log.info(motor.state())
   log.info("Press any button to continue ...")
-  while not btn.any()
+  while not btn.any():
     sleep(0.01)
   return
 
